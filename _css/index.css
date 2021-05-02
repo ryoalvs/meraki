@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+
+/* declaração de variáveis com as cores e sobrescrita de atributos */
+:root {
+    --azul1: #283B56;
+    --branco1: #f9f9f9;
+    --azul2: #ACBFD9;
+    --preto1: #0D0F12;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+ul {list-style-type: none;}
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+button,
+input,
+fieldset {
+    outline: none !important;
+    border: none;
+}
+/* --------------------------------------------------------------- */
+
+/* atribuições para o cabeçalho e para o div superior do cabeçalho */
+header {
+    height: 218px;
+    background-color: var(--azul1);
+
+    color: var(--branco1);
+}
+
+header .header{
+    position: relative;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 10px 1rem 1rem;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-itens-center {
+    align-items: center !important;
+}
+/* --------------------------------------------------------------- */
+
+/* configurações da logo */
+.logoArea {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.header .header-logo {
+    padding-left: 0;
+    text-align: left;
+}
+
+.header .header-logo a {
+    display: block;
+    width: 159px;
+}
+/* --------------------- */
+
+/* fazendo com que os links que possuem .svg sejam clicáveis */
+a.svg {
+    position: relative;
+    display: inline-block; 
+}
+a.svg:after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
+/* -------------------------------------------------------- */
+
+/* configurações da barra de pesquisa */
+.srcArea {
+    height: 35px;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.busca {
+    display: flex;
+    position: relative;
+    background-color: none;
+    height: 100%;
+}
+
+.btn-buscar {
+    background: url(../_img/_svg/icons/search.svg) center no-repeat;
+    max-width: 35px;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    padding: 0;
+    border-radius: 0 14px 14px 0;
+    cursor: pointer;
+    flex: 0 0 100%;
+}
+
+.srcArea input[type="text"] {
+    width: 100%;
+    padding: .375rem .75rem .375rem 120px;
+    font-size: 16px;
+    text-align: right;
+    color: var(--preto1);
+    font-weight: 400;
+}
+
+.srcArea input, .srcArea button {
+    background-color: var(--branco1);
+}
+/* ---------------------------------- */
+
+/* configurações da área dos ícones no cabeçalho */
+.iconsArea {
+    width: 100%;
+}
+
+.iconsArea .txt {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 14px 0 3rem;
+}
+
+.iconsArea .txt a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.icons a{
+    width: 2.43rem;
+    margin: 0 10px;
+}
+/* --------------------------------------------- */
+
+/* configurações da barra de navegação */
+header .nav {
+    height: 51px;
+    position: relative;
+    padding: 0 150px;
+}
+
+.topics {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.topic {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+}
+/* ----------------------------------- */
+
+/* main {
+
+} */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 156px;
+    background-color: var(--azul1);
+}
