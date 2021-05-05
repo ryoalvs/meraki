@@ -125,8 +125,7 @@ a.svg:after {
     font-weight: 400;
 }
 
-.srcArea input,
-.srcArea button {
+.srcArea input, .srcArea button {
     background-color: var(--branco1);
 }
 /* ---------------------------------- */
@@ -150,6 +149,11 @@ a.svg:after {
 .iconsArea .txt a {
     text-decoration: underline;
     text-underline-offset: 2px;
+}
+
+.icons a{
+    width: 2.43rem;
+    margin: 0 10px;
 }
 /* --------------------------------------------- */
 
