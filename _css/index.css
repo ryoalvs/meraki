@@ -133,7 +133,12 @@ a.svg:after {
 
 /* configurações da área dos ícones no cabeçalho */
 .iconsArea {
-    width: 100%;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.iconsArea .d-flex {
+    justify-content: space-between;
 }
 
 .iconsArea .txt {
@@ -146,35 +151,10 @@ a.svg:after {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
-
-.icons a{
-    width: 2.43rem;
-    margin: 0 10px;
-}
-
-.icons a:last-child {
-    margin-right: 0;
-}
 /* --------------------------------------------- */
 
 /* configurações da barra de navegação */
-header .nav {
-    height: 51px;
-    position: relative;
-    padding: 0 150px;
-}
 
-.topics {
-    width: 1000px;
-    display: flex;
-    align-items: center;
-}
-
-.topic {
-    flex-grow: 1;
-    flex-basis: 0;
-    text-align: right;
-}
 /* ----------------------------------- */
 
 /* main {
