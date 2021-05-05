@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+/* @keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0)
+    }
+} */
 
 /* declaração de variáveis com as cores e sobrescrita de atributos */
 :root {
@@ -32,10 +40,15 @@ fieldset {
 
 /* atribuições para o cabeçalho e para o div superior do cabeçalho */
 header {
+    position: relative;
     height: 218px;
     background-color: var(--azul1);
 
     color: var(--branco1);
+}
+
+header, header section {
+    animation: .8s ease-out 0s 1 slideInFromTop;
 }
 
 header .header{
@@ -155,13 +168,71 @@ a.svg:after {
 
 /* configurações da barra de navegação */
 header .nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.navBar {
+    height: 51px;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navBar .container{
+    margin-right: 10%;
+    padding: 0;
+    height: 100%;
+}
+
+.navBarCat,
+.topics, 
+.topics .d-flex {
+    height: 100%;
+}
+
+.navBar .topics {
+    flex-grow: 1;
+}
+
+.topics .d-flex .topic{
+    text-align: center;
+    flex-basis: 0;
+    flex-grow: 1;
     position: relative;
+    padding-top: 1em;
 }
 
-.nav .container{
-    width: 85%;
+.topics .d-flex .topic:not(:first-child):after{
+    content: "";
+    background: var(--branco1);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20%;
+    left: 0;
+    width: 1px;
 }
 
+.topics .d-flex .topic:hover {
+    border-radius: 5px;
+    background-color: #ACBFD933;
+    transition: .5s all;
+}
+
+.navBarCat {
+    position: relative;
+    background-color: var(--azul2);
+    color: var(--azul1);
+    flex: 0 0 20%;
+    border-radius: 0 14px 14px 0;
+    padding: 1rem 1rem 1rem 0;
+}
+
+.navBarCat span {
+    position: absolute;
+    font-weight: 600;
+    right: 1rem;
+}
 /* ----------------------------------- */
 
 /* main {
