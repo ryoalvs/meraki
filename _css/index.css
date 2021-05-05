@@ -125,7 +125,8 @@ a.svg:after {
     font-weight: 400;
 }
 
-.srcArea input, .srcArea button {
+.srcArea input,
+.srcArea button {
     background-color: var(--branco1);
 }
 /* ---------------------------------- */
@@ -150,14 +151,16 @@ a.svg:after {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
-
-.icons a{
-    width: 2.43rem;
-    margin: 0 10px;
-}
 /* --------------------------------------------- */
 
 /* configurações da barra de navegação */
+header .nav {
+    position: relative;
+}
+
+.nav .container{
+    width: 85%;
+}
 
 /* ----------------------------------- */
 
