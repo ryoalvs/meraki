@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+/* declaração de variáveis com as cores e sobrescrita de atributos */
+:root {
+    --azul-escuro: #2C4B5C;
+    --branco: #f9f9f9;
+    --preto: #20252c;
+
+    --azul-claro: #8DBEC3;
+    --rosa-claro: #DABBCB;
+    --violeta: #6C63FF;
+    --vinho: #A0616A;
+
+    --gradient-btn-azul: linear-gradient(265deg, var(--azul-escuro) -50%, var(--azul-claro) 98%);
+
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: var(--roboto);
+    font-weight: 300;
+}
+
+* ul { list-style-type: none; }
+* a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+fieldset {
+    outline: none !important;
+    border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: inherit !important;
+}
+/* --------------------------------------------------------------- */
+
+body {
+    color: var(--preto);
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.align-itens-center {
+    align-items: center !important;
+}

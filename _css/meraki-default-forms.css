@@ -1,0 +1,93 @@
+body{
+    background: var(--branco) no-repeat fixed;
+    background-size: 100%;
+    background-position-y: 150px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 2.5rem;
+}
+
+    /* cria um efeito de glassmorfismo no pseudo-elemento da classe .box */
+.box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    border-radius: 20px;
+    box-shadow: 1px 4px 5px 5px rgba(94, 37, 37, 0.05);
+    
+    background: #f9f9f930;
+    backdrop-filter: blur(10px);
+}
+    /* alternativa (tosca) ao efeito em navegadores que não suportam o backdrop-filter */
+@supports not (backdrop-filter: blur(10px)) {
+    .box::before{
+        background-color: #f9f9f9aa;
+    }
+}
+
+
+/* posicionando e gerenciando o formulario e seus campos */
+
+.form {
+    width: 50%;
+    margin: 0 auto auto;
+    height: 100%;
+}
+
+.h-form, span {
+    display: block;
+    text-align: center !important;
+}
+
+.form-content .field, .ipt-form,  .submit input[type="submit"]{
+    width: 100%;
+}
+
+.h-form {
+    font-size: calc(2em + 1rem);
+    margin-bottom: 2.5rem;
+}
+
+.form-content .field {
+    padding: .58rem 0;
+    margin-top: 5%;
+}
+
+.field .ipt-form {
+    padding: .8rem 0 .2rem;
+    font-size: 1.1rem;
+
+    background: none;
+    border-bottom: 1px solid var(--azul-escuro);
+}
+
+.field .ipt-form[type="password"] {
+    margin-bottom: 1rem;
+}
+
+.submit input[type="submit"] {
+    padding: .8rem;
+    font-size: 1.2rem;
+    background: var(--gradient-btn-azul);
+    color: var(--branco);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-content .field .lbl-form {
+    display: block;
+    font-size: 1.2rem;
+}

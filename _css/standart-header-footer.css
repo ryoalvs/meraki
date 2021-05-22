@@ -1,50 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
-/* @keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0)
-    }
-} */
+@import url(root.css);
 
-/* declaração de variáveis com as cores e sobrescrita de atributos */
-:root {
-    --azul1: #283B56;
-    --branco1: #f9f9f9;
-    --azul2: #ACBFD9;
-    --preto1: #0D0F12;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-ul {list-style-type: none;}
-a {
-    text-decoration: none; 
-    color: inherit;
-}
-
-button,
-input,
-fieldset {
-    outline: none !important;
-    border: none;
-}
-/* --------------------------------------------------------------- */
-
-/* atribuições para o cabeçalho e para o div superior do cabeçalho */
 header {
     position: relative;
-    height: 218px;
-    background-color: var(--azul1);
-
-    color: var(--branco1);
+    height: 11rem;
 }
 
 header, header section {
@@ -59,17 +17,16 @@ header .header{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    padding: 10px 1rem 1rem;
+    padding: 20px 1rem 1rem;
 }
 
-.d-flex {
-    display: flex !important;
+.bg-dark-blue {
+    background-color: var(--azul-escuro);
 }
 
-.align-itens-center {
-    align-items: center !important;
+.color-white {
+    color: var(--branco);
 }
-/* --------------------------------------------------------------- */
 
 /* configurações da logo */
 .logoArea {
@@ -134,13 +91,13 @@ a.svg:after {
     padding: .375rem .75rem .375rem 120px;
     font-size: 16px;
     text-align: right;
-    color: var(--preto1);
+    color: var(--preto);
     font-weight: 400;
 }
 
 .srcArea input,
 .srcArea button {
-    background-color: var(--branco1);
+    background-color: var(--branco);
 }
 /* ---------------------------------- */
 
@@ -160,9 +117,13 @@ a.svg:after {
     margin: 0 14px 0 3rem;
 }
 
-.iconsArea .txt a {
+.iconsArea .txt p:last-child {
     text-decoration: underline;
     text-underline-offset: 2px;
+}
+
+.iconsArea .txt p{
+    cursor: default;
 }
 /* --------------------------------------------- */
 
@@ -175,11 +136,9 @@ header .nav {
 
 .navBar {
     height: 51px;
-    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.08);
 }
 
 .navBar .container{
-    margin-right: 10%;
     padding: 0;
     height: 100%;
 }
@@ -204,7 +163,7 @@ header .nav {
 
 .topics .d-flex .topic:not(:first-child):after{
     content: "";
-    background: var(--branco1);
+    background: var(--branco);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -218,21 +177,6 @@ header .nav {
     background-color: #ACBFD933;
     transition: .5s all;
 }
-
-.navBarCat {
-    position: relative;
-    background-color: var(--azul2);
-    color: var(--azul1);
-    flex: 0 0 20%;
-    border-radius: 0 14px 14px 0;
-    padding: 1rem 1rem 1rem 0;
-}
-
-.navBarCat span {
-    position: absolute;
-    font-weight: 600;
-    right: 1rem;
-}
 /* ----------------------------------- */
 
 /* main {
@@ -243,5 +187,5 @@ footer {
     position: absolute;
     bottom: 0;
     height: 156px;
-    background-color: var(--azul1);
+    background-color: var(--azul-escuro);
 }

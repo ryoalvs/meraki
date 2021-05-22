@@ -1,0 +1,29 @@
+@import url(root.css);
+@import url(meraki-default-forms.css);
+
+/* define o fundo do body e os atributos da div do formulario */
+
+body{
+    background-image: url(../_img/_svg/bg-login.svg);
+}
+
+.box {
+    width: 50.9375rem;
+    transform: translateY(8%);
+}
+
+.field .ipt-form[type="password"] {
+    margin-bottom: 1rem;
+}
+
+/* ajustando o botão de trocar para login como adm */
+
+.dev-login-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 5px auto 10%;
+
+    background: var(--azul-escuro) url(../_img/_svg/icons/devicon.svg) no-repeat center bottom;
+    background-size: 12px;
+}
