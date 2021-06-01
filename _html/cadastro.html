@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meraki | Cadastro</title>
+    <link rel="stylesheet" href="../_css/cadastro.css">
+	
+</head>
+<body>
+	 <div class="box">
+        <h1 class="h-form">Cadastro</h1>
+        <form action="../_php/cadastro.php" method="POST" class="form">
+            
+            <div class="form-content">
+                <div class="field">
+                    <label for="iptNome" class="lbl-form">Nome</label>
+                    <input type="Text" name="Nome" id="iptNome" class="ipt-form" placeholder="seu primeiro nome" required>
+                </div>
+                <div class="field">
+                    <label for="iptSbNome" class="lbl-form">Sobrenome</label>
+                    <input type="Text" name="SbNome" id="iptSbNome" class="ipt-form" placeholder="seu sobrenome" required>
+                </div>
+                <div class="field">
+                    <label for="iptEmail" class="lbl-form">Email</label>
+                    <input type="Email" name="Email" id="iptEmail" class="ipt-form" placeholder="ex: meraki@gmail.com" required>
+                </div>
+                <div class="field">
+                    <label for="iptPass" class="lbl-form">Senha</label>
+                    <input type="password" name="password" id="iptPass" class="ipt-form" placeholder="sua senha" required>
+                    <input type="checkbox" id="showpass" onclick="showPass()">
+                    <label for="showpass">mostrar senha</label>
+                </div>
+                <div class="field">
+                    <label for="iptVlPass" class="lbl-form">Confime a senha</label>
+                    <input type="password" name="password" id="iptVlPass" class="ipt-form" placeholder="confirme a senha" required>
+                    <input type="checkbox" id="showpass" onclick="showPass()">
+                    <label for="showpass">mostrar senha</label>
+                </div>
+                <div class="field">
+                    <label for="iptCpf" class="lbl-form">CPF</label>
+                    <input type="Text" name="Cpf" id="iptCpf" class="ipt-form" placeholder="seu cpf (apenas números)" required>
+                </div>
+                <div class="field">
+                    <label for="iptTell" class="lbl-form">Telefone</label>
+                    <input type="Tel" name="Tell" id="iptTell" class="ipt-form" placeholder="seu número de telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
+                </div>
+                <div class="field submit">
+                    <input type="submit" value="cadastrar" >
+                </div>
+                
+                <script src="../_js/show-form-hidden-content.js"></script>
+            	
+
+            </div>
+
+        </form>
+
+        <span>já possui uma conta?<a href="#">faça login</a>!</span>
+    </div>
+
+</body>
+</html>

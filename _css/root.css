@@ -19,6 +19,7 @@
     --vinho: #A0616A;
 
     --gradient-btn-azul: linear-gradient(265deg, var(--azul-escuro) -50%, var(--azul-claro) 98%);
+    --gradient-btn-purple:linear-gradient(265deg, var(--azul-escuro) -50%, var(--rosa-claro) 98%);
 
     --roboto: 'Roboto', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
