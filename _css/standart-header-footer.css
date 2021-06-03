@@ -183,9 +183,26 @@ header .nav {
 
 } */
 
+/* estilização do rodapé */
 footer {
-    position: absolute;
-    bottom: 0;
-    height: 156px;
-    background-color: var(--azul-escuro);
+    position: relative;
+    height: 9rem;
 }
+
+.footer, 
+.footer .container,
+.footer .container>div {
+    height: 100%;
+}
+
+.footer .container>div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.medias {
+    gap: 5px;
+}
+
+/* --------------------- */
