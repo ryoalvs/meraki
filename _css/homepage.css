@@ -1,0 +1,28 @@
+@import url(root.css);
+
+.highlights-img {
+    height: 475px;
+}
+
+.main-content div {
+    height: 680px;
+}
+
+.main-content .highlights {
+    background: url(../_img/_svg/highlights-bg.svg) no-repeat;
+    background-size: 90%;
+}
+
+.main-content .offers {
+    background: url(../_img/_svg/offers-bg.svg) no-repeat right;
+    background-size: contain;
+}
+
+.main-content .month-theme {
+    background: url(../_img/_svg/monthT-bg.png) no-repeat right bottom;
+    background-size: 95%;
+}
+
+.main-content div:nth-child(even) {
+    background-color: var(--roxo-escuro);
+}

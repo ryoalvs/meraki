@@ -12,6 +12,7 @@
     --azul-escuro: #2C4B5C;
     --branco: #f9f9f9;
     --preto: #20252c;
+    --roxo-escuro: #2F2E41;
 
     --azul-claro: #8DBEC3;
     --rosa-claro: #DABBCB;
@@ -56,10 +57,25 @@ input:-webkit-autofill:active  {
   transition: background-color 5000s;
   -webkit-text-fill-color: inherit !important;
 }
+    /* estilizando a barra de rolagem */
+html{
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #20252caa;
+    border-radius: 9999px;
+}
+
 /* --------------------------------------------------------------- */
 
 body {
     color: var(--preto);
+    background-color: var(--branco);
 }
 
 .d-flex {
