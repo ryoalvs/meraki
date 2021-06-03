@@ -1,2 +1,3 @@
-# meraki
- repositório da livraria virtual Meraki
+# Livraria Meraki
+ Repositório da livraria virtual Meraki.
+ 
