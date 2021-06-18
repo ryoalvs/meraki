@@ -1,14 +1,24 @@
 @import url(root.css);
 
-.highlights-img {
-    height: 475px;
+/* main > section div * {
+    animation: 2s ease-out 0s 1 fadein;
+} */
+
+.main-content > div {
+    height: 700px;
 }
 
-.main-content div {
-    height: 680px;
+.main-content > div:nth-child(even) {
+    background-color: var(--roxo-escuro);
 }
 
-.main-content .highlights {
+.main-content .container {
+    height: 100%;
+    padding: 3.2rem 1rem;
+    position: relative;
+}
+
+.main-content .news {
     background: url(../_img/_svg/highlights-bg.svg) no-repeat;
     background-size: 90%;
 }
@@ -23,6 +33,37 @@
     background-size: 95%;
 }
 
-.main-content div:nth-child(even) {
-    background-color: var(--roxo-escuro);
+.main-content-headers {
+    position: absolute;
+}
+
+.main-content > div:nth-child(even) .main-content-headers {
+    right: 1rem;
+    text-align: right;
+    color: var(--branco);
+}
+
+.main-content-headers  h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.main-content-headers p {
+    width: 380px;
+    position: relative;
+}
+
+.main-content-headers p img { position: absolute;}
+
+.month-theme .main-content-headers h2{
+    font-family: 'Rochester', cursive;
+    margin-bottom: 12px;
+}
+
+.main-content-headers p { margin-bottom: 10px;}
+
+.main-content-headers sup {
+    font-weight: 500;
+    color: #20252caa;
 }

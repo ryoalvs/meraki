@@ -1,12 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Rochester&display=swap');
 @keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(0)
-    }
+    0%  { transform: translateY(-100%); }
+    100%{ transform: translateY(0) }
 }
+@-moz-keyframes slideInFromTop {
+    0%  { transform: translateY(-100%); }
+    100%{ transform: translateY(0) }
+}
+@-webkit-keyframes slideInFromTop {
+    0%  { transform: translateY(-100%); }
+    100%{ transform: translateY(0) }
+}
+@-ms-keyframes slideInFromTop {
+    0%  { transform: translateY(-100%); }
+    100%{ transform: translateY(0) }
+}
+@-o-keyframes slideInFromTop {
+    0%  { transform: translateY(-100%); }
+    100%{ transform: translateY(0) }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 /* declaração de variáveis com as cores e sobrescrita de atributos */
 :root {
     --azul-escuro: #2C4B5C;

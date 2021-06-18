@@ -1,0 +1,58 @@
+@import url(root.css);
+
+.main-content-products {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    overflow-x: scroll;
+    bottom: 80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    background: #f9f9f9cc;
+    border-radius: 9px;
+
+    box-shadow: 0px 4px 10px rgba(65, 99, 118, 0.15);
+}
+
+.main-content-products .product {
+    height: 350px;
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content-products .product:not(:first-child) {
+    border-left: 1px solid #2c4b5c34;
+}
+
+.product .case {
+    width: 150px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 35px 35px 0;
+}
+
+.product .product-info {
+    flex-grow: 1;
+    line-height: 1.2rem;
+    margin-top: 1rem;
+
+    width: 100%;
+    margin-left: 2.5rem;
+}
+
+.product-info .title {
+    font-size: 1.2rem;
+}
+.product-info .author {
+    color: #20252c8a;
+    font-size: .95rem;
+}
+.product-info .price {
+    font-weight: 400;
+    margin-top: .5rem;
+}

@@ -8,6 +8,17 @@ const showPass = () =>
         iptPass.type = "password"
 }
 
+const showVlPass = () =>
+{
+    const iptVlPass = document.getElementById('iptVlPass')
+
+    if( iptVlPass.type === "password" )
+        iptVlPass.type = "text"
+    else
+        iptVlPass.type = "password"
+
+}
+
 const showAdmPass = () => 
 {
     const iptAdmPass = document.getElementById('iptAdmPass')
@@ -24,8 +35,8 @@ const showAdmField = () =>
     const btn = document.querySelector('.dev-login-btn')
     const admField = document.querySelector('.admField')
     const icons = [
-        'url(../_img/_svg/icons/devicon.svg)',
-        'url(../_img/_svg/icons/user.svg)'
+        'url(_img/_svg/icons/devicon.svg)',
+        'url(_img/_svg/icons/user.svg)'
     ];
 
     if( admField.style.display === "none" ){
